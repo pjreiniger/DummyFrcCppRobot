@@ -24,5 +24,8 @@ jobs:
       with:
         java-version: 1.11
 
+    - name: setup roborio toolchain
+      run: ./gradlew installRoboRioToolchain
+
     - name: Build Everything
       run: ./gradlew build
